@@ -85,3 +85,11 @@ print(f"Сложение: {a} + {b} = {a + b}")
 print(f"Вычитание: {a} - {b} = {a - b}")
 print(f"Умножение: {a} * {b} = {a * b}")
 print(f"Деление: {a} / {b} = {a / b}")
+
+#Задание 8
+from datetime import datetime
+print("8. Текущая дата и время:")
+now = datetime.now()
+print(f"Текущая дата и время: {now}")
+print(f"Текущая дата: {now.date()}")
+print(f"Текущее время: {now.time()}")
