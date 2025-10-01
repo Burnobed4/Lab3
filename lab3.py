@@ -10,3 +10,19 @@ print("2. Чётные числа:", even_numbers)
 words = ["python", "Java", "c++", "Rust", "go"]
 filtered_words = [word.upper() for word in words if len(word) > 3]
 print("3. Отфильтрованные слова:", filtered_words)
+
+#Задание 4
+class Countdown:
+    def __init__(self, n):
+        self.n = n
+
+    def __iter__(self):
+        current = self.n
+        while current >= 1:
+            yield current
+            current -= 1
+
+
+print("4. Вывод:")
+for x in Countdown(5):
+    print(x, end=" ")
