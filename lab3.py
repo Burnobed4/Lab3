@@ -72,3 +72,16 @@ def deposit_calculator():
 
 # Запуск калькулятора
 deposit_calculator()
+
+#Задание 7
+from fractions import Fraction
+print("7. Работа с дробями:")
+a = Fraction(3, 4)
+b = Fraction(5, 6)
+
+print(f"Дробь A = {a}")
+print(f"Дробь B = {b}")
+print(f"Сложение: {a} + {b} = {a + b}")
+print(f"Вычитание: {a} - {b} = {a - b}")
+print(f"Умножение: {a} * {b} = {a * b}")
+print(f"Деление: {a} / {b} = {a / b}")
