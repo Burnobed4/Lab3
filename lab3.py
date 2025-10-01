@@ -114,3 +114,16 @@ print(f"Дата рождения: {birthday}")
 print(f"Сегодня: {today}")
 print(f"Дней прошло с рождения: {days_passed}")
 print(f"Дней до следующего дня рождения: {days_to_next_birthday}")
+
+#Задание 10
+print("10. Datatime:")
+now = datetime.now()
+
+months = {
+    1: 'января', 2: 'февраля', 3: 'марта', 4: 'апреля',
+    5: 'мая', 6: 'июня', 7: 'июля', 8: 'августа',
+    9: 'сентября', 10: 'октября', 11: 'ноября', 12: 'декабря'
+}
+
+result = f"Сегодня {now.day} {months[now.month]} {now.year} года, время: {now.strftime('%H:%M')}"
+print(result)
