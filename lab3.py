@@ -26,3 +26,16 @@ class Countdown:
 print("4. Вывод:")
 for x in Countdown(5):
     print(x, end=" ")
+
+#Задание 5
+def fibonacci(n):
+    a, b = 0, 1
+    count = 0
+    while count < n:
+        yield a
+        a, b = b, a + b
+        count += 1
+
+print("\n5. Числа Фибоначчи:")
+for num in fibonacci(5):
+    print(num, end=" ")
